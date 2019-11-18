@@ -1,0 +1,8 @@
+# use a node base image
+FROM ubuntu
+
+# set maintainer
+MAINTAINER Ashutosh Barve "ashutosh.bisan@mediakind.com"
+
+CMD ["echo","hello World"]
+

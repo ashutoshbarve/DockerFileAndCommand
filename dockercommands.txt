@@ -1,0 +1,23 @@
+Docker basic commands
+1.docker pull <link> : pull container from docker hub
+2.docker images : list out all the images 
+3.docker commit <image Id> <neame>
+4.docker inspect : return info related to the object
+5.docker login
+6.docker ps : runnig containers
+7.docker ps -a: list of all the containers
+8.docker rm : remove container
+9.docker rmi : remove image
+10.docker rmi -f : forcefully remove the runnig image
+11.docker build . -t <directoryname/nameofthefile:tag> : to build image
+	-t : tag list
+12.docker run : run command in new container
+13.docker run -it -p <host port no>:<container port no> <image name:tag>
+14.docker run -d --name appcon -p 80:80 ashutoshbarve/staticapp:tag
+	we use -d: to run a container in background
+	we use --name : to  to start a appcon container named ashutoshbarve/staticapp:tag
+15.docker exec -it <containerId> bash: to run a command in existing container
+	-it: interactive mode
+	bash : consol(for ubantu)
+	powershell : consol (for windows)
+16.docker run -i -t <fileneame> : for windows to get into console.

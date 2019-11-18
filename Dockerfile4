@@ -1,0 +1,11 @@
+# use a node base image
+#Download base image ubuntu:latest
+FROM mcr.microsoft.com/windows/nanoserver:1803-amd64
+
+COPY . .
+
+# set maintainer
+MAINTAINER Ashutosh Barve "ashutosh.bisan@mediakind.com"
+
+CMD ["echo", "first docker image"]
+
